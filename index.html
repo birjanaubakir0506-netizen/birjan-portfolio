@@ -106,7 +106,88 @@
             padding: 30px;
             color: #87938a;
         }
-    </style>
+   
+/* SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero > * {
+    animation: fadeUp 1s ease forwards;
+}
+
+.hero h1 {
+    animation-delay: 0.2s;
+}
+
+.hero p {
+    animation-delay: 0.4s;
+}
+
+/* BUTTON EFFECT */
+.btn {
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #65db83;
+    color: #080c09;
+    transform: translateY(-4px);
+}
+
+/* SKILL EFFECT */
+.skills span {
+    transition: 0.3s ease;
+}
+
+.skills span:hover {
+    background: #65db83;
+    color: #080c09;
+    transform: translateY(-5px);
+}
+
+/* SECTION EFFECT */
+section {
+    line-height: 1.8;
+}
+
+section p {
+    color: #aab5ad;
+    max-width: 700px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+    header {
+        padding: 20px 5%;
+    }
+
+    nav a {
+        margin-left: 8px;
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 50px 7%;
+    }
+
+    section {
+        padding: 55px 7%;
+    }
+}
+ </style>
 </head>
 
 <body>
