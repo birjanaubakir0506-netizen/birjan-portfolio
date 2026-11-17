@@ -328,7 +328,51 @@ section p {
         font-size: 8px;
     }
 }
-    </style>
+  
+.achievement-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.achievement-card {
+    padding: 30px;
+    background: #101812;
+    border: 1px solid #304b36;
+    transition: 0.3s;
+}
+
+.achievement-card:hover {
+    border-color: #65db83;
+    transform: translateY(-7px);
+}
+
+.achievement-card span {
+    color: #65db83;
+    font-size: 11px;
+}
+
+.achievement-card h3 {
+    margin: 25px 0 10px;
+    font-size: 25px;
+}
+
+.achievement-card p {
+    color: #aab5ad;
+    margin-bottom: 25px;
+}
+
+.achievement-card strong {
+    color: #65db83;
+    font-size: 13px;
+}
+
+@media(max-width:700px) {
+    .achievement-cards {
+        grid-template-columns: 1fr;
+    }
+}
+ </style>
 </head>
 
 <body>
@@ -340,7 +384,8 @@ section p {
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
-</nav>
+<a href="#achievements">Achievements</a>
+    </nav>
 </header>
 
 
