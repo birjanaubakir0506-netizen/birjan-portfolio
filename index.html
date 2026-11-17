@@ -187,7 +187,148 @@ section p {
         padding: 55px 7%;
     }
 }
- </style>
+ 
+/* HERO DESIGN */
+
+.hero {
+    min-height: 85vh;
+    padding: 70px 10%;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-label {
+    color: #65db83;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.hero-subtitle {
+    color: #aab5ad;
+    letter-spacing: 4px;
+    font-size: 12px;
+}
+
+.hero h1 {
+    font-size: clamp(55px, 8vw, 100px);
+    line-height: 1.05;
+    margin: 20px 0;
+    letter-spacing: -3px;
+}
+
+.hero h1 span {
+    color: #65db83;
+}
+
+.hero-description {
+    color: #aab5ad;
+    max-width: 420px;
+    line-height: 1.8;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.second-btn {
+    color: white;
+    border: 1px solid #526457;
+    padding: 14px 25px;
+    text-decoration: none;
+}
+
+.hero-photo {
+    max-width: 380px;
+    width: 100%;
+    justify-self: center;
+}
+
+.photo-frame {
+    padding: 10px;
+    border: 1px solid #65db83;
+    position: relative;
+}
+
+.photo-frame img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    background: #18251b;
+}
+
+.photo-caption {
+    display: flex;
+    justify-content: space-between;
+    color: #65db83;
+    font-size: 10px;
+    margin-top: 15px;
+    letter-spacing: 2px;
+}
+
+.achievements {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 35px 10%;
+    border-top: 1px solid #26382b;
+    border-bottom: 1px solid #26382b;
+}
+
+.achievement {
+    padding: 15px;
+    text-align: center;
+    border-right: 1px solid #26382b;
+}
+
+.achievement:last-child {
+    border-right: none;
+}
+
+.achievement h2 {
+    color: #65db83;
+    font-size: 38px;
+}
+
+.achievement p {
+    color: #aab5ad;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 700px) {
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 55px 7%;
+        gap: 35px;
+    }
+
+    .hero-photo {
+        max-width: 280px;
+    }
+
+    .achievements {
+        padding: 25px 3%;
+    }
+
+    .achievement {
+        padding: 8px 3px;
+    }
+
+    .achievement h2 {
+        font-size: 27px;
+    }
+
+    .achievement p {
+        font-size: 8px;
+    }
+}
+    </style>
 </head>
 
 <body>
@@ -202,18 +343,73 @@ section p {
 </nav>
 </header>
 
-<div class="hero">
-    <div class="tag">CYBERSECURITY | TECHNOLOGY | MILITARY</div>
 
-    <h1>HELLO, I'M<br><span>BIRJAN.</span></h1>
+<!-- MAIN HERO SECTION -->
+<div class="hero" id="home">
 
-    <p>
-        Cybersecurity student, athlete and future technology professional.
-        Passionate about programming, information security and innovation.
-    </p>
+    <div class="hero-content">
 
-    <a href="#about" class="btn">EXPLORE MY WORLD ↗</a>
+        <div class="hero-label">
+            ● NATIONAL DEFENSE UNIVERSITY
+        </div>
+
+        <p class="hero-subtitle">
+            CYBERSECURITY CADET / ATHLETE
+        </p>
+
+        <h1>
+            AUBAKIR<br>
+            <span>BIRJAN.</span>
+        </h1>
+
+        <p class="hero-description">
+            Discipline is my strength.
+            Technology is my future.
+            Excellence is my mission.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#about" class="btn">EXPLORE MORE ↗</a>
+            <a href="#contact" class="second-btn">CONTACT ME</a>
+        </div>
+
+    </div>
+
+    <div class="hero-photo">
+
+        <div class="photo-frame">
+            <img src="images/profile.jpg"
+                 alt="Aubakir Birjan">
+        </div>
+
+        <div class="photo-caption">
+            <span>01 / PROFILE</span>
+            <span>MONGOLIA 🇲🇳</span>
+        </div>
+
+    </div>
+
 </div>
+
+<!-- ACHIEVEMENTS -->
+<section class="achievements">
+
+    <div class="achievement">
+        <h2>02</h2>
+        <p>WORLD CUP BRONZE</p>
+    </div>
+
+    <div class="achievement">
+        <h2>01</h2>
+        <p>WORLD CHAMPIONSHIP BRONZE</p>
+    </div>
+
+    <div class="achievement">
+        <h2>08+</h2>
+        <p>YEARS OF SPORTS</p>
+    </div>
+
+</section>
 
 <section id="about">
     <h2>01 / ABOUT ME</h2>
