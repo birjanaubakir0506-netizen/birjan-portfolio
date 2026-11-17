@@ -1,20 +1,168 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BIRJAN | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #080c09;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #26382b;
+        }
+
+        .logo {
+            color: #65db83;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 60px 10%;
+        }
+
+        .hero h1 {
+            font-size: clamp(45px, 8vw, 90px);
+            margin: 20px 0;
+        }
+
+        .hero h1 span {
+            color: #65db83;
+        }
+
+        .hero p {
+            color: #aab5ad;
+            font-size: 18px;
+            line-height: 1.8;
+            max-width: 600px;
+        }
+
+        .tag {
+            color: #65db83;
+            letter-spacing: 4px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 28px;
+            border: 1px solid #65db83;
+            color: #65db83;
+            text-decoration: none;
+            width: fit-content;
+        }
+
+        section {
+            padding: 70px 10%;
+            border-top: 1px solid #26382b;
+        }
+
+        section h2 {
+            color: #65db83;
+            margin-bottom: 25px;
+            font-size: 32px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skills span {
+            border: 1px solid #36533d;
+            padding: 12px 20px;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #87938a;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Hi, I'm Birjan.</h1>
+<header>
+    <div class="logo">BIRJAN.</div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-    <h2>Future Software Engineer</h2>
+<div class="hero">
+    <div class="tag">CYBERSECURITY | TECHNOLOGY | MILITARY</div>
 
-    <p>Cybersecurity Student | Athlete</p>
+    <h1>HELLO, I'M<br><span>BIRJAN.</span></h1>
 
-    <button>Discover More</button>
+    <p>
+        Cybersecurity student, athlete and future technology professional.
+        Passionate about programming, information security and innovation.
+    </p>
+
+    <a href="#about" class="btn">EXPLORE MY WORLD ↗</a>
+</div>
+
+<section id="about">
+    <h2>01 / ABOUT ME</h2>
+    <p>
+        I am a student at the National Defense University of Mongolia.
+        My interests include cybersecurity, software development,
+        military technology and sports.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>02 / MY INTERESTS</h2>
+    <div class="skills">
+        <span>Cybersecurity</span>
+        <span>Programming</span>
+        <span>Networking</span>
+        <span>Military Technology</span>
+        <span>Judo</span>
+        <span>Hand-to-Hand Combat</span>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>03 / CONTACT</h2>
+    <p>Let's connect and create something meaningful.</p>
+    <p>Instagram: @birjuu_aa</p>
+</section>
+
+<footer>
+    © 2026 BIRJAN. All rights reserved.
+</footer>
 
 </body>
 </html>
